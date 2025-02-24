@@ -4,5 +4,6 @@ numpy
 pymongo
 certifi
 scikit-learn
+PyYAML
 # pymongo[srv]==3.4
 # -e .
