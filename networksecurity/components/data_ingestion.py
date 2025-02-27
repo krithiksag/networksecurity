@@ -37,6 +37,8 @@ class DataIngestion:
             if "_id" in df.columns.to_list():
                 df=df.drop(columns=["_id"],axis=1)
             df.replace({"na":np.nan},inplace=True)
+            print(f"DataFrame shape: {df.shape}")
+            print(df.head())
             return df
         except Exception as e:
             raise NetworkSecurityException(e,sys)
